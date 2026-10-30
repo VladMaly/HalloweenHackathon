@@ -48,7 +48,9 @@ Common to all: teams whose work in progress is big files, small to mid-sized (th
 
 How to read the filters: **industries and pains are from the source**. Headcount ranges and titles are our working translation of the source's "small teams" and roles into Cargo and FullEnrich filters; adjust them live if the list comes back thin. Geos are not stated in the source: TBD (default to the US while we test).
 
-### 1. Robotics & Simulation (the lead)
+**Priority:** Robotics & Simulation, Games and 3D Printing are the **primary** segments (the three said out loud). Film & VFX is **secondary**: it is on the page but not in the spoken line.
+
+### 1. Robotics & Simulation (primary, the lead)
 
 - **Who:** robotics startups and teams running simulation, especially small Isaac Sim teams; very well funded right now, the biggest payer with the weakest tools.
 - **Industries:** Robotics, Automation / Industrial Automation, Autonomous Vehicles and Drones, Computer Software (simulation).
@@ -57,8 +59,9 @@ How to read the filters: **industries and pains are from the source**. Headcount
 - **Pains (their words):** "Sensor logs scattered across S3 buckets, and nobody knows which dataset trained which model." Logs moved off robots on USB sticks, no way to version bags against newer software. NVIDIA deprecated Omniverse Launcher, Nucleus Workstation and Nucleus Cache (Oct 1, 2025), so small Isaac Sim teams lost their free collaboration layer for sim assets.
 - **Today they use:** rosbag2 / MCAP plus scripts, Foxglove (viewing, not versioning), Hugging Face (LeRobot), DVC or raw S3.
 - **Why Interlinked:** one place for sim assets, datasets and logs, saved together. Linux desktop app and CLI ship today (Ubuntu / ROS teams covered).
+- **Signals / keywords:** ROS / ROS 2, Isaac Sim, Omniverse, Nucleus, MCAP, rosbag, URDF, MJCF, USD, LeRobot, Foxglove, DVC, "simulation", "sensor data", "fleet"; job posts for robotics or simulation engineers; recent funding.
 
-### 2. Games
+### 2. Games (primary)
 
 - **Who:** indie and small game studios on Unreal, Godot, Unity and Blender.
 - **Industries:** Computer Games, Video Games / Interactive Entertainment.
@@ -67,8 +70,9 @@ How to read the filters: **industries and pains are from the source**. Headcount
 - **Pains (their words):** "The project is 40 GB. Getting it to the team means zips, drives and a lost afternoon, and git will not take the level at all." Git LFS bandwidth bills.
 - **Today they use:** Perforce, Git LFS on GitHub, Diversion, Anchorpoint, Unity Version Control (crowded field).
 - **Why Interlinked:** the level and the .blend history without LFS bills; built on Lore, Epic's open source engine used in Unreal Editor for Fortnite; Unreal plugin.
+- **Signals / keywords:** Unreal Engine, Godot, Blender, Unity (do not lead on price with Unity teams: Unity Version Control has no seat charges since 2026-03-01), "indie studio", Git LFS, Perforce, uasset / umap, FBX, Substance; job posts for Unreal developers or technical artists.
 
-### 3. 3D Printing (hardware teams and print farms)
+### 3. 3D Printing (primary: hardware teams and print farms)
 
 - **Who:** hardware teams and print farms, not hobbyists (hobby files are small; the payers are teams).
 - **Industries:** Mechanical / Industrial Engineering, Consumer Electronics, Additive Manufacturing / 3D Printing, Product Design.
@@ -76,8 +80,10 @@ How to read the filters: **industries and pains are from the source**. Headcount
 - **Titles:** Founder, Head of Hardware, Mechanical Engineering Lead, Product Design Lead, Print Farm / Production Manager, Operations Manager.
 - **Pains:** old 3MF files print "a total mess" after a slicer update; Bambu Studio overwrites 3MFs unasked; GrabCAD Workbench shut down and deleted its files; Onshape Free no longer makes private documents.
 - **Why Interlinked:** "Reprint exactly what you sold: every STEP and 3MF, every save." Step back to the exact file that printed.
+- **Signals / keywords:** "print farm", "additive manufacturing", "rapid prototyping", Bambu Lab, Prusa, 3MF, STEP, STL, slicer, GrabCAD, Onshape, SolidWorks, Fusion 360; companies selling printed parts or products.
+- **Caution (from the brand file):** hobby print files are small STLs, so skip hobbyists and makers; target teams with many parts and revisions.
 
-### 4. Film & VFX (boutique VFX, post and AI video studios)
+### 4. Film & VFX (secondary: boutique VFX, post and AI video studios)
 
 - **Who:** boutique VFX and post houses and freelancers (work is moving to them as big houses close), and AI video studios doing client work (people making AI video see themselves in "Film").
 - **Industries:** Motion Pictures and Film, Media Production, Animation, Post-production, Broadcast Media.
@@ -86,6 +92,14 @@ How to read the filters: **industries and pains are from the source**. Headcount
 - **Pains (their words):** "The shot is forty gigabytes of EXR, and it moves between artists on drives and transfer links." Versions by hand as `shot_v001`. AI generations scattered across tools and Downloads folders.
 - **Today they use:** LucidLink (streams, not versioned), ShotGrid / ftrack (tracking), Frame.io (review), Perforce at larger studios, Dropbox and a NAS at small shops.
 - **Why Interlinked:** one tool that streams and versions, beside the tracker; every version of the shot, one link for the client, no seats.
+- **Signals / keywords:** "VFX studio", "post-production", "boutique", "AI video", "generative video", Houdini, Nuke, EXR, ShotGrid / Flow Production Tracking, ftrack, LucidLink, Frame.io, Runway, Kling, Veo, Midjourney; small remote teams that use freelancers.
+- **First message (from the research):** AI video studios: "Every generation from every model, with its prompt, in one link your client opens." Boutique VFX: "Every version of the shot, one link for the client, no seats."
+
+### Exclude from every list
+
+- **Competitors** (named in the sources): Perforce, Diversion, Anchorpoint, Unity, LucidLink, Suite Studios, Frame.io, Autodesk (ShotGrid), ftrack, Foxglove, Dropbox, Onshape / PTC, GrabCAD, Higgsfield (sells a team workspace). Do not email their staff.
+- **Not ours:** AI model hosts (Hugging Face), legacy engineering firms, big VFX houses with their own storage, BIM (Revit) firms, medical imaging.
+- **Hobbyists and solo makers:** a free on-ramp, not payers.
 
 ### Copy rules for outreach (from the brand file)
 
@@ -103,13 +117,16 @@ How to read the filters: **industries and pains are from the source**. Headcount
 
 ### Team rules (to fill in)
 
-| Rule | Value |
-|---|---|
-| Credit cap (Cargo / FullEnrich) | **TBD** |
-| Do-not-contact / suppression list | **TBD** |
-| Sending inbox | **TBD** |
-| Consent basis | **TBD** |
-| Work emails only | Yes |
+Not decided yet. The suggested defaults are proposals until the team confirms them.
+
+| Rule | Value | Suggested default |
+|---|---|---|
+| FullEnrich credit cap | **TBD** | 500 credits |
+| Cargo credit cap | **TBD** | 2,000 credits |
+| Do-not-contact / suppression list | **TBD** | Competitors excluded (list above), plus anyone who opted out |
+| Sending inbox | **TBD** | None until decided: draft only, no sends |
+| Consent basis | **TBD** | |
+| Work emails only | Yes | |
 
 ## Tools
 
