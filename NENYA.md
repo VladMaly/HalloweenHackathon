@@ -29,8 +29,9 @@ Run them as `npx -y @qwntllabs/nenya <command>` if `nenya` is not on the PATH.
 
 ## Our rules
 
-To fill in once the team agrees them:
+Decided Oct 30, 2026 (full table in [README.md](README.md#team-rules)):
 
-- Suppression list:
-- Consent basis:
-- Credit budget (Cargo / FullEnrich):
+- Suppression list: brand new contacts only, plus competitors, "not ours" and anyone who opted out.
+- Consent basis: legitimate interest, work emails only; Canada only with publicly published work emails (CASL).
+- Credit budget: Cargo 1,000, FullEnrich 1,000.
+- Countries: USA and Canada. Sending inbox: caspian@interlinkedfiles.com.

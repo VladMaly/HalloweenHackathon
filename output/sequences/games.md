@@ -8,7 +8,7 @@
 - Copy-rule check: no em or en dashes, none of the banned words, no competitor names, footer on all 3 emails.
 - Edited after generation: removed "no extra charge per gigabyte moved" from email 2 (a claim the README does not support).
 - Edited after generation: email 1 said git "will not take the level at all", which is false (git stores binary files). Reworded to the real pain: big binaries bloat git and the large file add-ons get slow, costly and painful at scale. Subject line no longer says "no git".
-- Every Games prospect gets all 3 emails. Email 2 has two versions: **2A** for Unreal, Godot and Blender teams, and **2B** for Unity teams. Per the README, do not lead on price with Unity teams, so 2B leads on the project and its history instead of price. Pick 2B when the studio's signals show Unity. 2B was written by hand after generation (no extra credits).
+- Every Games prospect gets all 3 emails. Email 2 has three versions: **2A** for Godot and Blender teams, **2B** for Unity teams, **2C** for Unreal teams. Per the README, do not lead on price with Unity teams, so 2B leads on the project and its history instead of price. Pick by the studio's engine signals (Unity → 2B, Unreal → 2C, Godot or Blender → 2A; unknown → 2A). 2A and 2B were written by hand after generation (no extra credits); 2C is the generated email 2.
 
 ---
 
@@ -28,14 +28,14 @@ Interlinked | interlinkedfiles.com
 {{company_address}}
 Not the right person, or rather not hear from us? Reply "unsubscribe" or click {{unsubscribe_link}} and we will not email you again.
 
-## Email 2A (day 3, Unreal, Godot and Blender teams)
-**Subject:** bandwidth bills on big builds
+## Email 2A (day 3, Godot and Blender teams)
+**Subject:** bandwidth bills on big .blend files
 
 Hi {{first_name}},
 
-Large file bandwidth bills keep growing as the project does. FBX, textures, full builds: the cost scales with every sync.
+Large file bandwidth bills keep growing as the project does. .blend files, textures, .glb exports, full builds: the cost scales with every sync.
 
-With Interlinked, {{company}} pays one price for any team size. Drop the Unreal plugin in, point it at your project folder and the whole team works from the desktop app. Every save of every uasset is kept.
+With Interlinked, {{company}} pays one price for any team size. Point the desktop app at your project folder, every .tscn scene and .blend file included, and the whole team works from it on Windows, macOS or Linux. Every save of every file is kept.
 
 Does that change anything for you?
 
@@ -54,6 +54,22 @@ Scenes, prefabs, FBX and textures grow fast, and getting the whole project to a 
 With Interlinked, {{company}} keeps the project in one folder, any file type, any size, and every save of every asset is kept. Step back to the scene as it was last week, from the desktop app on Windows, macOS or Linux, or from the CLI.
 
 Worth a 15 minute look?
+
+{{sender_name}}
+Interlinked | interlinkedfiles.com
+{{company_address}}
+Not the right person, or rather not hear from us? Reply "unsubscribe" or click {{unsubscribe_link}} and we will not email you again.
+
+## Email 2C (day 3, Unreal teams)
+**Subject:** bandwidth bills on big builds
+
+Hi {{first_name}},
+
+Large file bandwidth bills keep growing as the project does. FBX, textures, full builds: the cost scales with every sync.
+
+With Interlinked, {{company}} pays one price for any team size. Drop the Unreal plugin in, point it at your project folder and the whole team works from the desktop app. Every save of every uasset is kept.
+
+Does that change anything for you?
 
 {{sender_name}}
 Interlinked | interlinkedfiles.com
