@@ -4,6 +4,8 @@ GTM Fellowship Halloween Hackathon, Oct 30, 2026 (Digital Jungle SF).
 
 Our entry: a GTM prospecting machine for **Interlinked**, built with Cargo, FullEnrich and Nenya.
 
+**Latest run:** [Iteration 1](ITERATION-1.md): 17 verified work emails, 4 draft sequences, 31.6 Cargo and 34 FullEnrich credits used. Nothing sent.
+
 ## What Interlinked is
 
 **FILE COLLABORATION: ANY SIZE, ANY TYPE**
