@@ -7,16 +7,17 @@
 - Recipients: the rows with segment "Games" in `../contacts.csv`.
 - Copy-rule check: no em or en dashes, none of the banned words, no competitor names, footer on all 3 emails.
 - Edited after generation: removed "no extra charge per gigabyte moved" from email 2 (a claim the README does not support).
+- Edited after generation: email 1 said git "will not take the level at all", which is false (git stores binary files). Reworded to the real pain: big binaries bloat git and the large file add-ons get slow, costly and painful at scale. Subject line no longer says "no git".
 - Unity teams: skip email 2 (it leans on price). Per the README, do not lead on price with Unity teams.
 
 ---
 
 ## Email 1 (day 0)
-**Subject:** 40 GB project, lost afternoon, no git
+**Subject:** 40 GB project, lost afternoon
 
 Hi {{first_name}},
 
-If the project is 40 GB, getting it to the team means zips, drives and a lost afternoon. And git will not take the level at all.
+If the project is 40 GB, getting it to the team means zips, drives and a lost afternoon. Put the big binary files in git and it bloats, and the usual large file add-ons get slow, costly and painful as the project grows.
 
 Interlinked is one folder for any file type, any size: your umaps, uassets, .blend files and builds, every save kept, the whole team in it from the desktop app on Windows, macOS or Linux.
 
