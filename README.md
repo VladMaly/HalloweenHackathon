@@ -4,16 +4,6 @@ GTM Fellowship Halloween Hackathon, Oct 30, 2026 (Digital Jungle SF).
 
 Our entry: a GTM prospecting machine for **Interlinked**, built with Cargo, FullEnrich and Nenya.
 
-## The goal
-
-Build a GTM system that actually runs, such as a list, a sequence or a campaign that went out, and demo it live at 4:00 PM (3 minutes, no slides).
-
-Judges score:
-1. It works live.
-2. It produced real output.
-3. It kept the team's rules (suppression list, consent, credit budget) for the whole run.
-4. It uses Nenya, Cargo and FullEnrich.
-
 ## What Interlinked is
 
 **FILE COLLABORATION: ANY SIZE, ANY TYPE**
@@ -31,16 +21,26 @@ If they ask "doesn't Drive or GitHub do that?": "Drive can't handle a game proje
 
 No TB numbers; a Higgsfield video on each card.
 
-| # | Card | Video |
+| # | Card | Higgsfield video |
 |---|---|---|
 | 1 | **Robotics & Simulation** | A robot arm in a lab |
 | 2 | **Games** | A castle and river landscape |
 | 3 | **3D Printing** | The F1 steering wheel nozzle shot |
 | 4 | **Film & VFX** | An LED wall film set |
 
+## The goal
+
+Build a GTM system that actually runs, such as a list, a sequence or a campaign that went out, and demo it live at 4:00 PM (3 minutes, no slides).
+
+Judges score:
+1. It works live.
+2. It produced real output.
+3. It kept the team's rules (suppression list, consent, credit budget) for the whole run.
+4. It uses Nenya, Cargo and FullEnrich.
+
 ## ICPs (who we prospect)
 
-Sourced from the Interlinked brand file and its marketing research (not invented here):
+Sourced from the Interlinked branding document in CellsInterlinked and its marketing research (not invented here):
 - `CellsInterlinked/docs/BRAND.md` (sections 2 and 10)
 - `CellsInterlinked/docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`
 
@@ -108,12 +108,13 @@ How to read the filters: **industries and pains are from the source**. Headcount
 - Never describe Interlinked as having AI inside it: agents drive it, there is no model in the product.
 - Never lead with the browser link or "nothing to install": the desktop app, CLI and MCP are the product.
 
-## What this project does
+## Overview: what this project does
 
 1. **Cargo builds the prospect list** from the ICPs above: companies by industry and headcount, then people by title, in the workspace **GTM Event Oct30**.
 2. **FullEnrich finds verified work emails** for those people (work emails only, no personal addresses).
 3. **Cargo writes personalized outreach** per field, using each segment's pain and "why Interlinked", as a sequence / campaign.
 4. **Nenya keeps the team's rules for the whole run:** suppression / do-not-contact list checked before any send, work emails only, credit budget never exceeded. See [NENYA.md](NENYA.md).
+5. **Everything lands in `output/`** (the contact list, one sequence per segment, the credits note) and **nothing is sent without review**: the founder checks the list and the copy first.
 
 ### Team rules
 

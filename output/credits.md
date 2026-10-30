@@ -29,6 +29,8 @@ Why 21 candidates were dropped:
 
 Exclusion checks: no competitor, "not ours" company or hobbyist is on the list. No personal webmail. USA only in the final list (the one Canadian was held back for CASL). The Cargo workspace Contacts and Accounts models held 0 records, and the repo has no list of people the founder already knows, so nobody was removed as already known. Check the 17 names against your own contacts before sending.
 
+**Not yet done:** the 17 contacts have not been checked against the founder's own contacts. That check must happen before anything is sent.
+
 ## Where the Cargo credits went
 
 | Step | Credits |
