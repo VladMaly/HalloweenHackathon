@@ -42,65 +42,77 @@ Judges score:
 
 ## Ideal customer profiles (ICPs): who we prospect
 
-Sourced from the Interlinked branding document in CellsInterlinked and its marketing research (not invented here):
-- `CellsInterlinked/docs/BRAND.md` (section 2, the four fields, which `docs/INTERLINKED_2026.md` names as the ICPs; section 10, the field cards)
-- `CellsInterlinked/docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md` (the ranking of who needs it today and can switch)
-- `CellsInterlinked/docs/atScale/marketing/RESEARCH_2026-10-23.md` (the ICPs that need it today: AI video studios first, boutique VFX and post second, games first on the homepage)
+Sourced from the Interlinked branding document in CellsInterlinked and its marketing research (not invented here). All paths are under `C:\_Snow\Coding\1Interlinked\2CS_ChatShell\CellsInterlinked\`:
+- `docs/BRAND.md`: section 2, "Who it is for: the four fields", and section 10, the field cards (proposed 2026-10-30, not settled)
+- `docs/INTERLINKED_2026.md`: names where the ICPs live: "THE ICPs | `docs/BRAND.md`, section 2 (four fields since 2026-10-28)"
+- `docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`: "Who needs it today, and who can switch", a ranking of seven fields
+- `docs/atScale/marketing/RESEARCH_2026-10-23.md`: "The ICPs that need it today"
+- `docs/INVESTORS.md`: "the four ICPs", field by field
 
-Every ICP those files name, and where it sits here:
+**The definition, word for word** (`docs/BRAND.md`, section 2): "Teams whose work in progress is big files, in fields that grow fast with AI. All four do complex, layered work."
 
-| ICP in the sources | Source | Here |
-|---|---|---|
-| Robotics & Simulation (the lead field) | BRAND.md s2, s10 | 1, primary |
-| Games (indie: Unreal, Godot, Blender) | BRAND.md s2, s10; WHO_NEEDS_IT_TODAY #3; RESEARCH | 2, primary |
-| Hardware teams and print farms (3D Printing) | BRAND.md s10 (proposed 2026-10-30, not settled); WHO_NEEDS_IT_TODAY #4 | 3, primary |
-| Boutique VFX and post, freelancers (Film & VFX) | BRAND.md s2, s10; WHO_NEEDS_IT_TODAY #2; RESEARCH (second) | 4a, secondary |
-| AI video studios doing client work (Film & VFX) | WHO_NEEDS_IT_TODAY #1; RESEARCH (lead ICP this month) | 4b, secondary field, highest urgency |
-| Solo builders across machines | WHO_NEEDS_IT_TODAY #5 | Not prospected: a free on-ramp, not a payer |
-| BIM (Revit) | WHO_NEEDS_IT_TODAY #6; RESEARCH | Skip (except SketchUp and Rhino studios) |
-| Medical imaging | BRAND.md s2 (card 4: "the most money, but gated", later); WHO_NEEDS_IT_TODAY #7; RESEARCH | Skip: locked in (PACS, HIPAA); s10 proposes taking it off the cards |
+### Every ICP in the sources, under its source name, word for word
 
-Common to all (BRAND.md s2): "teams whose work in progress is big files, in fields that grow fast with AI", doing complex, layered work; small to mid-sized (the sources say "small teams", "small shops", "indie", "a 30 person team"), who hate per-seat storage. **Not ours** (BRAND.md s2): AI models (Hugging Face holds them), the legacy engineering firms, the big VFX houses that own their own storage (won later, by a VFX page and an email). **Skip for now** (WHO_NEEDS_IT_TODAY, RESEARCH): medical imaging and BIM, both locked in.
+| Source name | Defining line, word for word | Source file | Here |
+|---|---|---|---|
+| **Robotics & Simulation** | "Robotics & Simulation: the biggest payer with the weakest tools (the lead). Huge data, and very well funded right now." | `docs/BRAND.md`, s2 | 1, primary |
+| **Robotics** | "NVIDIA deprecated Omniverse Launcher, Nucleus Workstation and Nucleus Cache on 2025-10-01, so small Isaac Sim teams lost their free collaboration layer for sim assets." | `docs/INVESTORS.md` | 1, primary |
+| **Games & 3D** | "Games & 3D. Smaller data, indie budgets, the most crowded field: Perforce, Diversion, Anchorpoint, Unity Version Control, other Lore hosts." | `docs/BRAND.md`, s2 | 2, primary |
+| **Games** | "Games: a castle and river landscape." ("Games loses \"& 3D\", since 3D now has a field of its own.") | `docs/BRAND.md`, s10 | 2, primary |
+| **Indie games (Unreal, Godot, Blender)** | "Your level and .blend history without LFS bandwidth bills." | `docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`, rank 3 | 2, primary |
+| **3D Printing** | "3D Printing comes in and Medical Imaging goes out" | `docs/BRAND.md`, s10 | 3, primary |
+| **Hardware teams and print farms** | "Files are small, so the payers are hardware teams and print farms, not hobbyists." First message: "Reprint exactly what you sold: every STEP and 3MF, every save." | `docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`, rank 4 | 3, primary |
+| **Film & VFX** | "Film & VFX: paying, but stitched together." "Our pitch: one tool that streams and versions, in place of LucidLink plus Perforce." | `docs/BRAND.md`, s2 | 4, secondary |
+| **Boutique VFX and post, freelancers** | "work moves to small remote boutiques where freelancers carry the tool costs" | `docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`, rank 2 | 4a, secondary |
+| **boutique VFX and post** | "boutique VFX and post second (the big houses are closing; small teams hate per-seat storage)" | `docs/atScale/marketing/RESEARCH_2026-10-23.md` | 4a, secondary |
+| **AI video studios (client work)** | "Every generation from every model, with its prompt, in one link your client opens." | `docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`, rank 1 | 4b, secondary field, highest urgency |
+| **AI video studios doing client work** | "AI video studios doing client work first (30M+ Higgsfield users, hundreds of generations a film, no incumbent, someone already charges $99 a year just to save clips)" | `docs/atScale/marketing/RESEARCH_2026-10-23.md` | 4b |
+| **"AI video"** | "\"AI video\" is not a label. Everything is AI now; people making AI video see themselves in \"Film\"." | `docs/BRAND.md`, s2 | 4b sits under the Film & VFX card |
+| **Solo builders across machines** | "Low willingness to pay: a funnel." | `docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`, rank 5 | Not prospected |
+| **BIM (Revit)** | "skip (except SketchUp and Rhino studios)" | `docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`, rank 6 | Not prospected |
+| **Medical Imaging** | "Medical Imaging: the most money, but gated." | `docs/BRAND.md`, s2 | Not prospected |
+| **Medical imaging** | "Medical imaging: the largest data and budgets, served by domain platforms today; a later market." | `docs/INVESTORS.md` | Not prospected |
+| **Not ours** | "Not ours: AI models (Hugging Face holds them), the legacy engineering firms, the big VFX houses that own their own storage (they are won later, by a VFX page and an email, not by the homepage)." | `docs/BRAND.md`, s2 | Excluded |
 
-How to read the filters: **industries and pains are from the source**. Headcount ranges and titles are our working translation of the source's "small teams" and roles into Cargo and FullEnrich filters; adjust them live if the list comes back thin. Geos are not stated in the source; for this run, USA and Canada (we sell worldwide, so expand later).
+**What is ours, not the sources':** the priority labels (primary, secondary) follow the spoken line in BRAND.md s10. In each segment below, **Industries, Headcount, Titles and Signals / keywords are our working filters** for Cargo and FullEnrich, built from the sources' fields, tools and files; adjust them live if the list comes back thin. Pains, files, tools used today and "Why Interlinked" are from the sources. Geos are not stated in the sources; for this run, USA and Canada (we sell worldwide, so expand later).
 
 **Priority:** Robotics & Simulation, Games and 3D Printing are the **primary** segments (the three said out loud). Film & VFX is **secondary**: it is on the page but not in the spoken line.
 
 ### 1. Robotics & Simulation (primary, the lead)
 
 - **Who:** robotics startups and teams running simulation, especially small Isaac Sim teams; very well funded right now, the biggest payer with the weakest tools.
-- **Industries:** Robotics, Automation / Industrial Automation, Autonomous Vehicles and Drones, Computer Software (simulation).
-- **Headcount:** 10 to 200.
-- **Titles:** CTO, VP / Head of Engineering, Head of Robotics, Robotics Software Lead, Simulation Lead / Simulation Engineer, ML / Data Infrastructure Lead, Founder (under 30 people).
+- **Industries (our working filter):** Robotics, Automation / Industrial Automation, Autonomous Vehicles and Drones, Computer Software (simulation).
+- **Headcount (our working filter):** 10 to 200.
+- **Titles (our working filter):** CTO, VP / Head of Engineering, Head of Robotics, Robotics Software Lead, Simulation Lead / Simulation Engineer, ML / Data Infrastructure Lead, Founder (under 30 people).
 - **Pains (their words):** "Sensor logs scattered across S3 buckets, and nobody knows which dataset trained which model." Logs moved off robots on USB sticks, no way to version bags against newer software. NVIDIA deprecated Omniverse Launcher, Nucleus Workstation and Nucleus Cache (Oct 1, 2025), so small Isaac Sim teams lost their free collaboration layer for sim assets.
 - **Today they use:** rosbag2 / MCAP plus scripts, Foxglove (viewing, not versioning), Hugging Face (LeRobot), DVC or raw S3.
 - **Their files:** sensor logs (MCAP, rosbag: camera, lidar, IMU), tens of GB per robot per hour; sim scenes and robots (USD, URDF, MJCF); meshes and CAD (STL, OBJ, glTF, STEP); datasets and models (Parquet, MP4, safetensors, PT checkpoints).
 - **Why Interlinked:** "one place for sim assets, datasets and logs, versioned together" (BRAND.md's pitch; in outreach say "every save kept", not "versioned"). Linux desktop app and CLI ship today (Ubuntu / ROS teams covered).
-- **Signals / keywords:** ROS / ROS 2, Isaac Sim, Omniverse, Nucleus, MCAP, rosbag, URDF, MJCF, USD, LeRobot, Foxglove, DVC, "simulation", "sensor data", "fleet"; job posts for robotics or simulation engineers; recent funding.
+- **Signals / keywords (our working filter):** ROS / ROS 2, Isaac Sim, Omniverse, Nucleus, MCAP, rosbag, URDF, MJCF, USD, LeRobot, Foxglove, DVC, "simulation", "sensor data", "fleet"; job posts for robotics or simulation engineers; recent funding.
 
-### 2. Games (primary)
+### 2. Games (primary; sources: "Games & 3D", "Indie games (Unreal, Godot, Blender)")
 
 - **Who:** indie and small game studios on Unreal, Godot and Blender (the research's list); Unity teams too, but not on price. Smaller data, indie budgets, the most crowded field.
-- **Industries:** Computer Games, Video Games / Interactive Entertainment.
-- **Headcount:** 2 to 50.
-- **Titles:** Founder / Studio Head, Technical Director, Lead Developer / Lead Programmer, Art Director / Lead Artist, Producer.
-- **Their files:** engine files (uasset, umap, Unity scenes and prefabs); source art (FBX, blend, Substance, PSD); textures and audio (EXR, PNG, TGA, WAV). Projects run 50 GB to several TB.
+- **Industries (our working filter):** Computer Games, Video Games / Interactive Entertainment.
+- **Headcount (our working filter):** 2 to 50.
+- **Titles (our working filter):** Founder / Studio Head, Technical Director, Lead Developer / Lead Programmer, Art Director / Lead Artist, Producer.
+- **Their files:** engine files (uasset, umap, Unity scenes and prefabs); source art (FBX, blend, Substance, PSD); textures and audio (EXR, PNG, TGA, WAV).
 - **Pains:** "The project is 40 GB. Getting it to the team means zips, drives and a lost afternoon." Git does store the level, but a project of big files bloats it, and the large file add-ons (Git LFS) get slow, costly and painful as the project grows: GitHub counts every clone and CI download against the owner. (BRAND.md's card quote goes on to say git cannot hold the level; that is false, so we leave it out.)
 - **Today they use:** Perforce, Git LFS on GitHub, Diversion, Anchorpoint, Unity Version Control, other Lore hosts (crowded field).
 - **Why Interlinked:** "Your level and .blend history without LFS bandwidth bills." Built on Lore, Epic's open source version control, built into Unreal Editor for Fortnite (say "Unreal Editor for Fortnite", never "from Fortnite"). An Unreal plugin is the games funnel (code written, launch planned).
-- **Signals / keywords:** Unreal Engine, Godot, Blender, Unity (do not lead on price with Unity teams: Unity Version Control has no seat charges since 2026-03-01), "indie studio", Git LFS, Perforce, uasset / umap, FBX, Substance; job posts for Unreal developers or technical artists.
+- **Signals / keywords (our working filter):** Unreal Engine, Godot, Blender, Unity (do not lead on price with Unity teams: Unity Version Control has no seat charges since 2026-03-01), "indie studio", Git LFS, Perforce, uasset / umap, FBX, Substance; job posts for Unreal developers or technical artists.
 
 ### 3. 3D Printing (primary: hardware teams and print farms)
 
 - **Who:** hardware teams and print farms, not hobbyists (hobby files are small; the payers are teams).
-- **Industries:** Mechanical / Industrial Engineering, Consumer Electronics, Additive Manufacturing / 3D Printing, Product Design.
-- **Headcount:** 5 to 200.
-- **Titles:** Founder, Head of Hardware, Mechanical Engineering Lead, Product Design Lead, Print Farm / Production Manager, Operations Manager.
+- **Industries (our working filter):** Mechanical / Industrial Engineering, Consumer Electronics, Additive Manufacturing / 3D Printing, Product Design.
+- **Headcount (our working filter):** 5 to 200.
+- **Titles (our working filter):** Founder, Head of Hardware, Mechanical Engineering Lead, Product Design Lead, Print Farm / Production Manager, Operations Manager.
 - **Their files:** STEP and CAD assemblies, 3MF slicer projects (for a whole fleet of printers), STL, scan data. Hobby files are small, so the case is many parts and revisions, not one big file.
 - **Pains:** old 3MF files print "a total mess" after a slicer update; Bambu Studio overwrites 3MFs unasked; GrabCAD Workbench shut on 2023-06-01 and deleted its files; Onshape Free no longer makes private documents.
-- **Today they use:** slicer project files (Bambu Studio), GrabCAD (gone), Onshape, MakerWorld for sharing.
+- **Today they use:** slicer project files (Bambu Studio), GrabCAD (gone), Onshape.
 - **Why Interlinked:** "Reprint exactly what you sold: every STEP and 3MF, every save." Step back to the exact file that printed.
-- **Signals / keywords:** "print farm", "additive manufacturing", "rapid prototyping", Bambu Lab, Prusa, 3MF, STEP, STL, slicer, GrabCAD, Onshape, SolidWorks, Fusion 360; companies selling printed parts or products.
+- **Signals / keywords (our working filter):** "print farm", "additive manufacturing", "rapid prototyping", Bambu Lab, Prusa, 3MF, STEP, STL, slicer, GrabCAD, Onshape, SolidWorks, Fusion 360; companies selling printed parts or products.
 - **Caution (from the brand file):** hobby print files are small STLs, so skip hobbyists and makers; target teams with many parts and revisions.
 
 ### 4. Film & VFX (secondary field, two ICPs)
@@ -110,39 +122,39 @@ People making AI video see themselves in "Film" (BRAND.md), so both ICPs below s
 #### 4a. Boutique VFX and post, freelancers
 
 - **Who:** small remote VFX and post houses and the freelancers they hire; work is moving to them as big houses close (Technicolor's MPC and The Mill, Glassworks).
-- **Industries:** Motion Pictures and Film, Media Production, Animation, Post-production, Broadcast Media.
-- **Headcount:** 2 to 100.
-- **Titles:** Founder / Executive Producer, Studio Manager, VFX Supervisor, Head of Pipeline / Pipeline TD, Post-production Supervisor, Compositing Lead.
+- **Industries (our working filter):** Motion Pictures and Film, Media Production, Animation, Post-production, Broadcast Media.
+- **Headcount (our working filter):** 2 to 100.
+- **Titles (our working filter):** Founder / Executive Producer, Studio Manager, VFX Supervisor, Head of Pipeline / Pipeline TD, Post-production Supervisor, Compositing Lead.
 - **Pains (their words):** "The shot is forty gigabytes of EXR, and it moves between artists on drives and transfer links." Versions by hand as `shot_v001`; WeTransfer cut free use; per-seat storage they pay for themselves.
 - **Today they use:** LucidLink (streams, not versioned), ShotGrid / ftrack (tracking), Frame.io (review), Perforce at larger studios, Dropbox and a NAS at small shops.
 - **Their files:** camera RAW (R3D, BRAW, ARRIRAW), hundreds of GB per shoot day; EXR image sequences, GBs a shot; sim caches (VDB, bgeo, Alembic), often the biggest files in the studio; scenes (Houdini, Nuke, Maya, USD).
 - **Why Interlinked:** "one tool that streams and versions, in place of LucidLink plus Perforce" (BRAND.md), sold as the storage and versioning layer beside the tracker, not a replacement for it (WHO_NEEDS_IT_TODAY); every version of the shot, one link for the client, no seats. Gap: no Nuke, Resolve or Premiere plugin yet.
-- **Signals / keywords:** "VFX studio", "post-production", "boutique", "compositing", Houdini, Nuke, EXR, ShotGrid / Flow Production Tracking, ftrack, LucidLink, Frame.io; small remote teams that use freelancers.
+- **Signals / keywords (our working filter):** "VFX studio", "post-production", "boutique", "compositing", Houdini, Nuke, EXR, ShotGrid / Flow Production Tracking, ftrack, LucidLink, Frame.io; small remote teams that use freelancers.
 - **First message (from the research):** "Every version of the shot, one link for the client, no seats."
 - **Caution:** studios subcontracting freelancers may require security audits (MPA Trusted Partner Network); not checked.
 
 #### 4b. AI video studios doing client work (the lead ICP in the 2026-10-23 research)
 
 - **Who:** studios and creators producing AI video for clients with Higgsfield, Kling, Runway, Veo and Midjourney; no incumbent, near-zero switching cost.
-- **Industries:** Media Production, Advertising Services, Marketing Services, Motion Pictures and Film, Online Media.
-- **Headcount:** 1 to 50.
-- **Titles:** Founder / Creative Director, AI Video Producer, AI Filmmaker / Generative Artist, Head of Production, Content Lead.
+- **Industries (our working filter):** Media Production, Advertising Services, Marketing Services, Motion Pictures and Film, Online Media.
+- **Headcount (our working filter):** 1 to 50.
+- **Titles (our working filter):** Founder / Creative Director, AI Video Producer, AI Filmmaker / Generative Artist, Head of Production, Content Lead.
 - **Pains:** hundreds of generations per short film, every client revision multiplies it; work lives inside each tool and then in Downloads folders; tools cap or cut storage and archive access. (Do not say "Higgsfield deletes your work": not confirmed.)
 - **Today they use:** each tool's own library, Downloads folders, n8n and Zapier pipelines; Higgsfield's team workspace is the threat.
 - **Why Interlinked:** one history across every model, with each generation's prompt, plus the edit, plus one link the client opens.
-- **Signals / keywords:** "AI video", "AI film", "generative video", "AI studio", "AI commercials", Higgsfield, Kling, Runway, Veo, Midjourney, n8n, Zapier.
+- **Signals / keywords (our working filter):** "AI video", "AI film", "generative video", "AI studio", "AI commercials", Higgsfield, Kling, Runway, Veo, Midjourney, n8n, Zapier.
 - **First message (from the research):** "Every generation from every model, with its prompt, in one link your client opens."
 
 ### Exclude from every list
 
-- **Competitors** (named in the sources): Perforce, Diversion, Anchorpoint, Unity, LucidLink, Suite Studios, Frame.io, Autodesk (ShotGrid), ftrack, Foxglove, Dropbox, Onshape / PTC, GrabCAD, Higgsfield (sells a team workspace). Do not email their staff.
+- **Competitors** (named in the sources): Perforce, Diversion, Anchorpoint, Unity, LucidLink, Suite Studios, Frame.io, ShotGrid, ftrack, Foxglove, Dropbox, Onshape, GrabCAD, Higgsfield (sells a team workspace). Do not email their staff.
 - **Not ours:** AI model hosts (Hugging Face), legacy engineering firms, big VFX houses with their own storage.
 - **Skip for now:** BIM (Revit) firms (except SketchUp and Rhino studios), medical imaging.
 - **Hobbyists, solo makers and solo builders:** a free on-ramp, not payers.
 
 ### Copy rules for outreach (from the brand file)
 
-- No em dashes or en dashes. Fewer words. Their words: renders, footage, project files, the level, the shot. Nobody says "binary files".
+- No em dashes or en dashes. Fewer words. Their words: renders, footage, project files, the level, the shot. Never our internal words for file types.
 - Never say in ads, posts or outreach: hosting, server, version control, repository, commit, push, branch. Never say "file locking". Never name a competitor in an ad. No internal codenames.
 - Never describe Interlinked as having AI inside it: agents drive it, there is no model in the product.
 - Never lead with the browser link or "nothing to install": the desktop app, CLI and MCP are the product.
