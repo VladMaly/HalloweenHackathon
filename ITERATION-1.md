@@ -7,6 +7,7 @@ The first real run of the pipeline in [README.md](README.md). A pilot only: abou
 - **17 verified work emails** across the four segments, all in the USA: [output/contacts.csv](output/contacts.csv)
 - **One 3 email sequence per segment**, drafts only: [output/sequences/](output/sequences/)
 - **Spend:** Cargo 31.6 of 1,000 credits, FullEnrich 34 of 1,000 (balance 3,000 before, 2,966 after). Full breakdown: [output/credits.md](output/credits.md)
+- **Cost per verified contact:** about 2 Cargo and 2 FullEnrich credits blended. Games was the outlier at 9 FullEnrich credits per kept contact.
 
 | Segment | Candidates (Cargo) | Emails found (FullEnrich) | Verified kept |
 |---|---:|---:|---:|
@@ -21,7 +22,7 @@ The first real run of the pipeline in [README.md](README.md). A pilot only: abou
 1. **Companies:** Cargo's Sales Navigator account search, one search per README segment. For 3D Printing the Sales Navigator results came back off ICP, so that segment used Cargo's FullEnrich company and people search instead (0 credits, cleaner results).
 2. **People:** Sales Navigator lead search with the README titles for each segment.
 3. **Emails:** FullEnrich enrichment. Only addresses marked **DELIVERABLE** were kept.
-4. **Filters applied:** USA and Canada only, work emails only, no competitors, no "not ours" companies, no hobbyists. Each contact row records its consent basis (legitimate interest).
+4. **Filters applied:** USA and Canada only, at most 2 people per company, work emails only, no competitors, no "not ours" companies, no hobbyists. Each contact row records its consent basis (legitimate interest).
 
 Why 21 of 38 candidates were dropped:
 - 12 not marked DELIVERABLE (9 "high probability", 3 "catch-all")
