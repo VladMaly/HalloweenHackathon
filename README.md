@@ -130,6 +130,11 @@ Not decided yet. The suggested defaults are proposals until the team confirms th
 
 ## Tools
 
+In one line each:
+- **Cargo:** finds the companies and people who fit our ICPs and writes the outreach to them.
+- **FullEnrich:** turns those names into verified work emails we can actually reach.
+- **Nenya:** watches the agents doing the work so they stick to our rules (do-not-contact list, consent, credit cap) for the whole run.
+
 ### Cargo
 - What it is: GTM platform for list building, enrichment, workflows and agents.
 - Access: `cargo-ai` CLI, plus the Cargo skills in Claude Code. Web app: https://app.getcargo.io
