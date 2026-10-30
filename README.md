@@ -46,7 +46,7 @@ Sourced from the Interlinked brand file and its marketing research (not invented
 
 Common to all: teams whose work in progress is big files, small to mid-sized (the source says "small teams", "small shops", "indie", "a 30 person team"), who hate per-seat storage. **Not ours:** AI model hosts, legacy engineering firms, big VFX houses with their own storage, medical imaging and BIM (locked in, skip for now).
 
-How to read the filters: **industries and pains are from the source**. Headcount ranges and titles are our working translation of the source's "small teams" and roles into Cargo and FullEnrich filters; adjust them live if the list comes back thin. Geos are not stated in the source: TBD (default to the US while we test).
+How to read the filters: **industries and pains are from the source**. Headcount ranges and titles are our working translation of the source's "small teams" and roles into Cargo and FullEnrich filters; adjust them live if the list comes back thin. Geos are not stated in the source; for this run, USA and Canada (we sell worldwide, so expand later).
 
 **Priority:** Robotics & Simulation, Games and 3D Printing are the **primary** segments (the three said out loud). Film & VFX is **secondary**: it is on the page but not in the spoken line.
 
@@ -115,18 +115,21 @@ How to read the filters: **industries and pains are from the source**. Headcount
 3. **Cargo writes personalized outreach** per field, using each segment's pain and "why Interlinked", as a sequence / campaign.
 4. **Nenya keeps the team's rules for the whole run:** suppression / do-not-contact list checked before any send, work emails only, credit budget never exceeded. See [NENYA.md](NENYA.md).
 
-### Team rules (to fill in)
+### Team rules
 
-Not decided yet. The suggested defaults are proposals until the team confirms them.
+Decided Oct 30, 2026.
 
-| Rule | Value | Suggested default |
-|---|---|---|
-| FullEnrich credit cap | **TBD** | 500 credits |
-| Cargo credit cap | **TBD** | 2,000 credits |
-| Do-not-contact / suppression list | **TBD** | Competitors excluded (list above), plus anyone who opted out |
-| Sending inbox | **TBD** | None until decided: draft only, no sends |
-| Consent basis | **TBD** | |
-| Work emails only | Yes | |
+| Rule | Value |
+|---|---|
+| Cargo credit cap | 1,000 credits |
+| FullEnrich credit cap | 1,000 credits |
+| Do-not-contact / suppression list | Brand new contacts only (no one we already know), plus competitors and "not ours" (list above), plus anyone who opted out |
+| Sending inbox | caspian@interlinkedfiles.com |
+| Countries | USA and Canada |
+| Consent basis | Legitimate interest: cold B2B email to work addresses, relevant to the person's role, easy opt out. Each contact records its basis. Canadian contacts only if their work email is publicly published (CASL). |
+| Work emails only | Yes |
+
+**The pitch:** we replace USB sticks and legacy software with one place that scales to any file type and any size.
 
 ## Tools
 

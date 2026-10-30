@@ -8,7 +8,7 @@
 - Copy-rule check: no em or en dashes, none of the banned words, no competitor names, footer on all 3 emails.
 - Edited after generation: removed "no extra charge per gigabyte moved" from email 2 (a claim the README does not support).
 - Edited after generation: email 1 said git "will not take the level at all", which is false (git stores binary files). Reworded to the real pain: big binaries bloat git and the large file add-ons get slow, costly and painful at scale. Subject line no longer says "no git".
-- Unity teams: skip email 2 (it leans on price). Per the README, do not lead on price with Unity teams.
+- Every Games prospect gets all 3 emails. Email 2 has two versions: **2A** for Unreal, Godot and Blender teams, and **2B** for Unity teams. Per the README, do not lead on price with Unity teams, so 2B leads on the project and its history instead of price. Pick 2B when the studio's signals show Unity. 2B was written by hand after generation (no extra credits).
 
 ---
 
@@ -28,7 +28,7 @@ Interlinked | interlinkedfiles.com
 {{company_address}}
 Not the right person, or rather not hear from us? Reply "unsubscribe" or click {{unsubscribe_link}} and we will not email you again.
 
-## Email 2 (day 3)
+## Email 2A (day 3, Unreal, Godot and Blender teams)
 **Subject:** bandwidth bills on big builds
 
 Hi {{first_name}},
@@ -38,6 +38,22 @@ Large file bandwidth bills keep growing as the project does. FBX, textures, full
 With Interlinked, {{company}} pays one price for any team size. Drop the Unreal plugin in, point it at your project folder and the whole team works from the desktop app. Every save of every uasset is kept.
 
 Does that change anything for you?
+
+{{sender_name}}
+Interlinked | interlinkedfiles.com
+{{company_address}}
+Not the right person, or rather not hear from us? Reply "unsubscribe" or click {{unsubscribe_link}} and we will not email you again.
+
+## Email 2B (day 3, Unity teams)
+**Subject:** every save of the scene, kept
+
+Hi {{first_name}},
+
+Scenes, prefabs, FBX and textures grow fast, and getting the whole project to a new teammate still means zips, drives and a lost afternoon.
+
+With Interlinked, {{company}} keeps the project in one folder, any file type, any size, and every save of every asset is kept. Step back to the scene as it was last week, from the desktop app on Windows, macOS or Linux, or from the CLI.
+
+Worth a 15 minute look?
 
 {{sender_name}}
 Interlinked | interlinkedfiles.com
