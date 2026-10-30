@@ -4,7 +4,7 @@ Nenya keeps AI agents on the rules and commitments the team sets: suppression li
 
 ## Install
 
-Installed Oct 30, 2026: Nenya 1.0.3, for this Windows account (vladmaly7@gmail.com).
+Installed Oct 30, 2026: Nenya 1.0.3, for this Windows account.
 
 ```
 npx -y @qwntllabs/nenya setup     # install and open Nenya

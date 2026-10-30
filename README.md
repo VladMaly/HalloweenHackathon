@@ -40,11 +40,25 @@ Judges score:
 3. It kept the team's rules (suppression list, consent, credit budget) for the whole run.
 4. It uses Nenya, Cargo and FullEnrich.
 
-## ICPs (who we prospect)
+## Ideal customer profiles (ICPs): who we prospect
 
 Sourced from the Interlinked branding document in CellsInterlinked and its marketing research (not invented here):
-- `CellsInterlinked/docs/BRAND.md` (sections 2 and 10)
-- `CellsInterlinked/docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md`
+- `CellsInterlinked/docs/BRAND.md` (section 2, the four fields, which `docs/INTERLINKED_2026.md` names as the ICPs; section 10, the field cards)
+- `CellsInterlinked/docs/atScale/marketing/WHO_NEEDS_IT_TODAY.md` (the ranking of who needs it today and can switch)
+- `CellsInterlinked/docs/atScale/marketing/RESEARCH_2026-10-23.md` (the ICPs that need it today: AI video studios first, boutique VFX and post second, games first on the homepage)
+
+Every ICP those files name, and where it sits here:
+
+| ICP in the sources | Source | Here |
+|---|---|---|
+| Robotics & Simulation (the lead field) | BRAND.md s2, s10 | 1, primary |
+| Games (indie: Unreal, Godot, Blender) | BRAND.md s2, s10; WHO_NEEDS_IT_TODAY #3; RESEARCH | 2, primary |
+| Hardware teams and print farms (3D Printing) | BRAND.md s10; WHO_NEEDS_IT_TODAY #4 | 3, primary |
+| Boutique VFX and post, freelancers (Film & VFX) | BRAND.md s2, s10; WHO_NEEDS_IT_TODAY #2; RESEARCH (second) | 4a, secondary |
+| AI video studios doing client work (Film & VFX) | WHO_NEEDS_IT_TODAY #1; RESEARCH (lead ICP this month) | 4b, secondary field, highest urgency |
+| Solo builders across machines | WHO_NEEDS_IT_TODAY #5 | Not prospected: a free on-ramp, not a payer |
+| BIM (Revit) | WHO_NEEDS_IT_TODAY #6; RESEARCH | Skip (except SketchUp and Rhino studios) |
+| Medical imaging | BRAND.md s2 (old card 4); WHO_NEEDS_IT_TODAY #7; RESEARCH | Skip: locked in, dropped from the cards in s10 |
 
 Common to all: teams whose work in progress is big files, small to mid-sized (the source says "small teams", "small shops", "indie", "a 30 person team"), who hate per-seat storage. **Not ours:** AI model hosts, legacy engineering firms, big VFX houses with their own storage, medical imaging and BIM (locked in, skip for now).
 
@@ -85,17 +99,34 @@ How to read the filters: **industries and pains are from the source**. Headcount
 - **Signals / keywords:** "print farm", "additive manufacturing", "rapid prototyping", Bambu Lab, Prusa, 3MF, STEP, STL, slicer, GrabCAD, Onshape, SolidWorks, Fusion 360; companies selling printed parts or products.
 - **Caution (from the brand file):** hobby print files are small STLs, so skip hobbyists and makers; target teams with many parts and revisions.
 
-### 4. Film & VFX (secondary: boutique VFX, post and AI video studios)
+### 4. Film & VFX (secondary field, two ICPs)
 
-- **Who:** boutique VFX and post houses and freelancers (work is moving to them as big houses close), and AI video studios doing client work (people making AI video see themselves in "Film").
+People making AI video see themselves in "Film" (BRAND.md), so both ICPs below sit under the Film & VFX card. The 2026-10-23 research ranks them first and second for urgency this month.
+
+#### 4a. Boutique VFX and post, freelancers
+
+- **Who:** small remote VFX and post houses and the freelancers they hire; work is moving to them as big houses close (Technicolor's MPC and The Mill, Glassworks).
 - **Industries:** Motion Pictures and Film, Media Production, Animation, Post-production, Broadcast Media.
 - **Headcount:** 2 to 100.
-- **Titles:** Founder / Executive Producer, Studio Manager, VFX Supervisor, Head of Pipeline / Pipeline TD, Post-production Supervisor, Creative Director.
-- **Pains (their words):** "The shot is forty gigabytes of EXR, and it moves between artists on drives and transfer links." Versions by hand as `shot_v001`. AI generations scattered across tools and Downloads folders.
+- **Titles:** Founder / Executive Producer, Studio Manager, VFX Supervisor, Head of Pipeline / Pipeline TD, Post-production Supervisor, Compositing Lead.
+- **Pains (their words):** "The shot is forty gigabytes of EXR, and it moves between artists on drives and transfer links." Versions by hand as `shot_v001`; WeTransfer cut free use; per-seat storage they pay for themselves.
 - **Today they use:** LucidLink (streams, not versioned), ShotGrid / ftrack (tracking), Frame.io (review), Perforce at larger studios, Dropbox and a NAS at small shops.
-- **Why Interlinked:** one tool that streams and versions, beside the tracker; every version of the shot, one link for the client, no seats.
-- **Signals / keywords:** "VFX studio", "post-production", "boutique", "AI video", "generative video", Houdini, Nuke, EXR, ShotGrid / Flow Production Tracking, ftrack, LucidLink, Frame.io, Runway, Kling, Veo, Midjourney; small remote teams that use freelancers.
-- **First message (from the research):** AI video studios: "Every generation from every model, with its prompt, in one link your client opens." Boutique VFX: "Every version of the shot, one link for the client, no seats."
+- **Why Interlinked:** the storage and versioning layer beside the tracker, not a replacement; every version of the shot, one link for the client, no seats.
+- **Signals / keywords:** "VFX studio", "post-production", "boutique", "compositing", Houdini, Nuke, EXR, ShotGrid / Flow Production Tracking, ftrack, LucidLink, Frame.io; small remote teams that use freelancers.
+- **First message (from the research):** "Every version of the shot, one link for the client, no seats."
+- **Caution:** studios subcontracting freelancers may require security audits (MPA Trusted Partner Network); not checked.
+
+#### 4b. AI video studios doing client work (the lead ICP in the 2026-10-23 research)
+
+- **Who:** studios and creators producing AI video for clients with Higgsfield, Kling, Runway, Veo and Midjourney; no incumbent, near-zero switching cost.
+- **Industries:** Media Production, Advertising Services, Marketing Services, Motion Pictures and Film, Online Media.
+- **Headcount:** 1 to 50.
+- **Titles:** Founder / Creative Director, AI Video Producer, AI Filmmaker / Generative Artist, Head of Production, Content Lead.
+- **Pains:** hundreds of generations per short film, every client revision multiplies it; work lives inside each tool and then in Downloads folders; tools cap or cut storage and archive access. (Do not say "Higgsfield deletes your work": not confirmed.)
+- **Today they use:** each tool's own library, Downloads folders, n8n and Zapier pipelines; Higgsfield's team workspace is the threat.
+- **Why Interlinked:** one history across every model, with each generation's prompt, plus the edit, plus one link the client opens.
+- **Signals / keywords:** "AI video", "AI film", "generative video", "AI studio", "AI commercials", Higgsfield, Kling, Runway, Veo, Midjourney, n8n, Zapier.
+- **First message (from the research):** "Every generation from every model, with its prompt, in one link your client opens."
 
 ### Exclude from every list
 
